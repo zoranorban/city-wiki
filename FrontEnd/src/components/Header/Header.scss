@@ -1,0 +1,52 @@
+@import "../../styles/theme.scss";
+
+.header {
+  display: flex;
+  height: $header-height;
+
+  .navbar {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-header;
+    color: $color-white;
+    border-bottom: 2px solid $color-underline;
+    
+    .page-link {
+      color: inherit;
+      text-decoration: none;
+      padding: 8px;
+      align-items: center;
+
+      &:hover {
+        color: $color-hover;
+      }
+    }
+  }
+
+  .site-title {
+    margin: 0 1rem;
+    font-weight: 600;
+    align-items: center;
+  }
+
+  .login-link {
+    padding: 8px;
+    background-color: $color-blue;
+    color: $color-white;
+    border: 1px solid $color-white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: inherit;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-blue;
+      background-color: $color-white;
+    }
+  }
+}

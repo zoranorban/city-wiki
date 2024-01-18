@@ -1,0 +1,28 @@
+@import "../../styles/theme.scss";
+
+.button {
+  padding: 8px;
+  background-color: $color-blue;
+  color: $color-white;
+  border: 1px solid $color-blue;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: inherit;
+  cursor: pointer;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+
+  &:hover {
+    color: $color-blue;
+    background-color: $color-white;
+  }
+
+  &.button-white {
+    background-color: $color-white;
+    color: $color-blue;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-blue;
+    }
+  }
+}
